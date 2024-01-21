@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Alfa+Slab+One&family=Archivo+Black&family=Arimo&family=Poppins:wght@400;500&family=Roboto&family=Roboto+Slab:wght@300;400&family=Style+Script&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    outline: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    background-color: black;
+    color: var(--color);
+}
+
+:root {
+    --background: rgb(229, 9, 20);
+    --color: rgb(255, 255, 255);
+}
+
+.hero-containter {
+    background-image: linear-gradient(rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1) 100%), url(images/bg.jpg);
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 10px solid gray;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding: 25px 180px;
+}
+
+.header img {
+    width: 140px;
+    z-index: 1000;
+}
+
+.header .login {
+    background-color: var(--background);
+    color: var(--color);
+    padding: 8px 25px;
+    border-radius: 5px;
+}
+
+.main-section {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    /* font-size: 25px; */
+    height: 65vh;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.main-section h1{
+    font-size: 50px;
+}
+.main-section h1,
+h3,
+h4 {
+    line-height: 3rem;
+    color: var(--color);
+}
+
+.main-section h3,
+h4 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.email {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.email input[type=email] {
+    background: linear-gradient(rgb(44, 42, 42) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1) 100%);
+    color: var(--color);
+    border: none;
+    border-radius: 5px;
+    width: 30%;
+    border: 1px solid wheat;
+}
+
+.email input[type=email]::placeholder {
+    color: var(--color);
+    font-size: 18px;
+}
+
+.email input[type=submit] {
+    background-color: var(--background);
+    color: var(--color);
+    border: none;
+    border-radius: 5px;
+}
+
+.email input {
+    font-size: 18px;
+    padding: 15px 30px;
+}
+
+.section1-parent,
+.section2-parent,
+.section3-parent,
+.section4-parent {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding: 60px 0px;
+    border-bottom: 10px solid gray;
+    color: var(--color);
+}
+
+.section1-child-left,
+.section2-child-left,
+.section1-child-left {
+    width: 40%;
+}
+
+.section2-child-left img {
+    width: 100%;
+}
+
+.section1-child-left img {
+    width: 100%;
+}
+
+.section1-child-right,
+.section2-child-right {
+    width: 40%;
+    font-size: 23px;
+}
+
+.section1-child-left h1 {
+    font-size: 23px;
+    line-height: 3.5rem;
+    line-height: 2rem;
+}
+
+.section1-child-right h5 {
+    line-height: 2.5rem;
+
+}
+
+.section2-child-right h1 {
+    line-height: 3.5rem;
+}
+
+.section2-child-right h5 {
+    line-height: 2rem;
+}
+
+.section3-child-right {
+    width: 40%;
+    font-size: 23px;
+    line-height: 3.5rem;
+}
+
+.section3-child-right h5 {
+    line-height: 2.5rem;
+}
+
+.section4-child-left {
+    width: 40%;
+}
+
+.section4-child-right {
+    width: 40%;
+    font-size: 23px;
+    line-height: 3.5rem;
+}
+
+.section4-child-right h5 {
+    line-height: 2.5rem;
+}
+
+.section4-child-left img {
+    width: 100%;
+}
+
+.faqs {
+    width: 100%;
+    color: var(--color);
+    padding: 60px 0px;
+    background-color: black;
+    border-bottom: 10px solid gray;
+
+}
+.faqs h1 {
+    text-align: center;
+    font-size: 50px;
+    padding: 20px 10px 40px 10px;
+}
+.faqs-heading-parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 85%;
+    margin: 10px auto;
+}
+.faqs-heading-parent p{
+    background-color: rgb(41, 39, 39);
+    padding: 20px 50px;
+    line-height: 2rem;
+    display: none;
+}
+.faqs-heading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 50px;
+    background-color: rgb(41, 39, 39);
+    font-size: 20px;
+    font-weight: 200;
+    cursor: pointer;
+}
+.faqs-heading h3{
+    letter-spacing: .1rem;
+}
+.faqs-heading:hover{
+    background-color: rgb(83, 69, 69);
+}
+.faqs .faqs-heading-parent.active p{
+    display: inline-block;
+    margin-top: 5px;
+}
+.faqs h2{
+    text-align: center;
+    font-size: 18px;
+    padding: 30px 10px 10px 10px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    color: var(--color);
+    background-color: black;
+    padding: 60px 0px;
+}
+.footer-child{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px 30px;
+    margin-top: 30px;
+}
+.footer-child a h4{
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 300;
+}
+.footer-child #English{
+    color: var(--color);
+    padding: 5px 25px;
+    background: linear-gradient(rgb(44, 42, 42) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1) 100%);
+}
+.footer-tagline{
+    background-color: grey;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+}
+.footer-tagline h2{
+    color: black;
+}
+.footer-tagline h2 span{
+    color: var(--background);
+}
+/* using the media queries */
+@media only screen and (max-width:1000px) {
+    .header {
+        padding: 25px 120px;
+    }
+
+    .header img {
+        width: 130px;
+        z-index: 1000;
+    }
+
+    .header .login {
+        background-color: var(--background);
+        color: var(--color);
+        padding: 8px 25px;
+        border-radius: 5px;
+    }
+    .footer-tagline h2{
+        color: black;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:769px) {
+    .header {
+        padding: 25px 70px;
+    }
+
+    .header img {
+        width: 120px;
+        z-index: 1000;
+    }
+
+    .header .login {
+        background-color: var(--background);
+        color: var(--color);
+        padding: 7px 25px;
+        border-radius: 5px;
+    }
+
+    .main-section h1 {
+        font-size: 40px;
+        line-height: 2.5rem;
+    }
+
+    .email input[type=email] {
+        width: 50%;
+    }
+
+    .section1-parent {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        padding: 40px 0px;
+        border-bottom: 10px solid gray;
+    }
+
+    .section2-parent,
+    .section4-parent {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: auto;
+        padding: 40px 0px;
+        border-bottom: 10px solid gray;
+    }
+
+    .section1-child-right,
+    .section2-child-right,
+    .section4-child-right {
+        width: 75%;
+        color: white;
+        font-size: 23px;
+    }
+
+    .section1-child-left,
+    .section2-child-left,
+    .section4-child-left {
+        width: 75%;
+    }
+    .footer-tagline h2{
+        color: black;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .header {
+        padding: 25px;
+    }
+
+    .header img {
+        width: 100px;
+        z-index: 1000;
+    }
+
+    .header .login {
+        background-color: var(--background);
+        color: var(--color);
+        padding: 6px 25px;
+        border-radius: 5px;
+    }
+
+    .main-section {
+        font-size: 15px;
+        margin-top: 70px;
+    }
+    .main-section h1{
+        font-size: 30px;
+        width: 95%;
+        margin: auto;
+    }
+    .main-section h3,
+    h4 {
+        line-height: 2.5rem;
+    }
+
+    .email {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .email input[type=email] {
+        width: 70%;
+        margin-bottom: 10px;
+    }
+
+    .email input[type=email]::placeholder {
+        color: var(--color);
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .email input[type=submit] {
+        width: 70%;
+    }
+
+    .section1-parent {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        padding: 40px 0px;
+        border-bottom: 10px solid gray;
+    }
+
+    .section2-parent,
+    .section4-parent {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: auto;
+        padding: 40px 0px;
+        border-bottom: 10px solid gray;
+    }
+
+    .section1-child-right,
+    .section2-child-right,
+    .section4-child-right {
+        width: 75%;
+        color: white;
+        font-size: 23px;
+    }
+
+    .section1-child-left,
+    .section2-child-left,
+    .section4-child-left {
+        width: 75%;
+    }
+    .faqs h1 {
+        text-align: center;
+        font-size: 40px;
+        padding: 20px 20px 40px 20px;
+    }
+    .faqs-heading {
+        padding: 13px 30px;
+        font-size: 16px;
+    }
+    .faqs-heading-parent p {
+        padding: 20px 30px;
+        
+    }
+    .footer-tagline h2{
+        color: black;
+        font-size: 16px;
+    }
+
+
+}
